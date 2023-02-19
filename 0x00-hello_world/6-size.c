@@ -1,6 +1,8 @@
 #include<stdio.h>
 /**
- * main - Entry point
+ * main - Entry point of the program
+ *
+ * Description: Prints the siizing  by using the 'printf' function
  *
  * Return: Always 0 (Success)
  */
