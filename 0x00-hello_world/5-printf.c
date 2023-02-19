@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Entry point 
+ *
+ * Descrption: prints the string by using the 'printf' function
  *
  * Return: Always 0 (Success)
  */
