@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - Entry point 
+ * main - Entry point of the program 
  *
  * Descrption: prints the string by using the 'printf' function
  *
