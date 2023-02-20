@@ -23,8 +23,8 @@ int main(void)
 	while
 		(d <= 'Z')
 		{
-			puchar(d);
-			c++;
+			putchar(d);
+			d++;
 		}
 	putchar('\n');
 	return (0);
