@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * main - Determines if a number
+ * main - Determines the last digit of a random number
  *
- * Description: to print out if statement
+ * Description: Prints out the last digit of a random number and whether it
+ * is greater than 5, less than 6 but not 0, or 0.
  *
  * Return: Always 0 (Success)
  */
@@ -13,19 +13,23 @@ int main(void)
 {
 	int n;
 
+	int m;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if ((n % 10)> 5)
+	m = n % 10;
+	if (m > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	}
-	else if ((n % 10) > 6 && (n % 10) != 0)
+	else if (m < 6 && m != 0)
 	{
-		printf("Last digit of %d is %d and is less than 0\n", n, n % 10);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
 	}
-	else
+	else 
 	{
-		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+		printf("Last digit of %d is %d and is 0\n", n, m);
 	}
+
 	return (0);
 }
