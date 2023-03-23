@@ -1,11 +1,10 @@
-#include "variadic_functios.h"
+#include "variadic_functions.h"
 
 /**
- * print_string - prints strings
+ * print_strings - prints strings
  * @separator: separator between strings
  * @n: number of arguments
  */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
@@ -21,12 +20,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (!str)
 			str = "(nil)";
 		if (!separator)
-			printf("%s", star);
+			printf("%s", str);
 		else if (separator && i == 0)
 			printf("%s", str);
 		else
 			printf("%s%s", separator, str);
 	}
+
 	printf("\n");
 
 	va_end(list);
